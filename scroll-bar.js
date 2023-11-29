@@ -1,7 +1,7 @@
  // function​ btn go to top
  window.onscroll = function () {
 
-    var mybutton = document.getElementById("myBtn");
+    var mybutton = document.getElementById("scroll-bar");
 
     if (document.documentElement.scrollTop > 200) {
         mybutton.style.display = "block";
