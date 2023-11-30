@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Services | CIH</title>
+    <title>Home | CIH</title>
+    <!-- style btn go to top  -->
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <!-- Link add icon logo in title bar -->
     <link rel="icon" type="image/x-icon" href="./images/cih.ltd.png">
     <!-- Link(CDN) add tailwind element for  website -->
@@ -38,7 +40,7 @@
                 <!-- components image logo cih.ltd-->
                 <div>
                     <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
-                        href="#">
+                        href="./index.html">
                         <img class="mr-2" src="./images/cih.ltd.png" style="height: 50px" alt="cih.ltd"
                             loading="lazy" />
                     </a>
@@ -110,26 +112,32 @@
                                 class=" mr-1 inline-block rounded px-6 pb-2 pt-2.5 transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none">
                                 <!-- Translate -->
                                 <img class="h-4 w-6"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/800px-Flag_of_Cambodia.svg.png"
-                                    alt="cambodia" />
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"
+                                    alt="flag" />
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>
+    </div><br /><br /><br /><br />
+
+
+
+
+
+
 
 
 
 
     <!-- Footer container -->
-    <footer class="flex flex-col items-center text-center dark:bg-neutral-600 lg:text-left">
+    <footer class="flex flex-col items-center text-center lg:text-left">
 
         <!--footer menu-->
         <div class="flex flex-col items-center">
-            <div class="mb-8 text-sm flex justify-center">
-                <a href="./index.html" class="ml-[20px]  underline decoration-solid" data-te-ripple-init
+            <div class="mb-8 text-xs flex justify-center">
+                <a href="./index.html" class="  underline decoration-solid" data-te-ripple-init
                     data-te-ripple-color="light">
                     Business Services
                 </a>
@@ -155,7 +163,7 @@
         <!--footer icon-->
         <div class="flex flex-col items-center">
             <div class="mb-4 flex justify-center">
-                <a href="https://www.facebook.com/cambodianinvestmentholding" class="ml-[20px]  " data-te-ripple-init
+                <a href="https://www.facebook.com/cambodianinvestmentholding" data-te-ripple-init
                     data-te-ripple-color="light" target="_blank">
                     <img class="mx-auto h-5 w-5" src="./icons/facebook.png" alt="facebook">
                 </a>
@@ -183,6 +191,26 @@
         </div>
     </footer>
 
+    <!-- bnt go to top -->
+    <button onclick="topFunction()" id="scroll-bar" title="Go To Top">
+        <img class="h-10 w-10" src="./icons/direction.png" alt="direction">
+    </button>
+
+    <!-- Let's get in touch -->
+    <div class="relative cursor-pointer">
+        <div class="fixed  bottom-1 right-0 z-40 m-6 inline-flex w-fit">
+            <div
+                class="flex items-center justify-center rounded-lg bg-[#d2ab67] px-4 py-2 text-center text-white shadow-lg">
+                <img class="h-7 w-7" src="./icons/message.png" alt="message">
+                <p class="ml-2 font-medium flex max-sm:hidden">
+                    Let&apos;s get in touch
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- import javacript use bnt go to top -->
+    <script src="./scroll-bar.js"></script>
     <!-- import javacript from tailwind-elements-->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
