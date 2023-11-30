@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | CIH</title>
     <!-- style btn go to top  -->
-    <link rel="stylesheet" href="./scroll-bar.css" type="text/css">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <!-- Link add icon logo in title bar -->
     <link rel="icon" type="image/x-icon" href="./images/cih.ltd.png">
     <!-- Link(CDN) add tailwind element for  website -->
@@ -200,7 +200,7 @@
                                 id="exampleInput123" aria-describedby="emailHelp123" placeholder="First name" />
                             <label for="emailHelp123"
                                 class=" pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">First
-                                name
+                                name*
                             </label>
                         </div>
 
@@ -211,7 +211,7 @@
                                 id="exampleInput124" aria-describedby="emailHelp124" placeholder="Last name" />
                             <label for="exampleInput124"
                                 class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Last
-                                name
+                                name*
                             </label>
                         </div>
                     </div>
@@ -222,8 +222,8 @@
                             class="bg-white peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleInput125" placeholder="Email address" />
                         <label for="exampleInput125"
-                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200">Email
-                            address
+                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200">Email*
+
                         </label>
                     </div>
 
@@ -233,7 +233,7 @@
                             class="bg-white peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleFormControlTextarea13" rows="5" placeholder="Message"></textarea>
                         <label for="exampleFormControlTextarea13"
-                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message
+                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message*
                         </label>
                     </div>
 
@@ -255,7 +255,7 @@
 
         <!--footer menu-->
         <div class="flex flex-col items-center">
-            <div class="mb-8 text-sm flex justify-center">
+            <div class="mb-8 text-xs flex justify-center">
                 <a href="./index.html" class="  underline decoration-solid" data-te-ripple-init
                     data-te-ripple-color="light">
                     Business Services
@@ -316,19 +316,17 @@
     </button>
 
     <!-- Let's get in touch -->
-
     <div class="relative cursor-pointer">
         <div class="fixed  bottom-1 right-0 z-40 m-6 inline-flex w-fit">
             <div
                 class="flex items-center justify-center rounded-lg bg-[#d2ab67] px-4 py-2 text-center text-white shadow-lg">
                 <img class="h-7 w-7" src="./icons/message.png" alt="message">
-                <p class="ml-2 font-bold flex max-sm:hidden">
+                <p class="ml-2 font-medium flex max-sm:hidden">
                     Let&apos;s get in touch
                 </p>
             </div>
         </div>
     </div>
-
 
     <!-- import javacript use bnt go to top -->
     <script src="./scroll-bar.js"></script>
