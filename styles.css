@@ -21,11 +21,38 @@
     background-color: #ffffff;
 }
 
+/* Style the visit button */
+.button {
+    position: absolute;
+    /* left: 5px; */
+    /* bottom: -20px; */
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Show the visit button on hover */
+.card:hover .button {
+    opacity: 1;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container-layout {
         margin-left: 2.5%;
         margin-right: 2.5%;
+    }
+
+    .background-image {
+        background-position: 50%;
+        background-image: url('./images/cih.ltd-header.png');
+        height: 1700px;
     }
 
 
@@ -37,6 +64,11 @@
         margin-left: 4%;
         margin-right: 4%;
     }
+    .background-image {
+        background-position: 50%;
+        background-image: url('./images/cih.ltd-header.png');
+        height: 1700px;
+    }
 
 }
 
@@ -47,6 +79,11 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    .background-image {
+        background-position: 50%;
+        background-image: url('./images/cih.ltd-header.png');
+        height: 1500px;
+    }
 
 }
 
@@ -56,7 +93,11 @@
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .background-image {
+        background-position: 50%;
+        background-image: url('./images/cih.ltd-header.png');
+        height: 1400px;
+    }
 
 }
 
@@ -65,5 +106,10 @@
     .container-layout {
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .background-image {
+        background-position: 50%;
+        background-image: url('./images/cih.ltd-header.png');
+        height: 1400px;
     }
 }

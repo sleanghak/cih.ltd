@@ -1,5 +1,5 @@
- // function​ btn go to top
- window.onscroll = function () {
+// function​ btn go to top
+window.onscroll = function () {
 
     var mybutton = document.getElementById("scroll-bar");
 
