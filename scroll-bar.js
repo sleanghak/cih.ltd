@@ -14,7 +14,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-// function change background
+// function change background color
 window.onscroll = function () {
 
     var myBackground = document.getElementById("changeBackground");
