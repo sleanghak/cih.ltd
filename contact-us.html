@@ -34,7 +34,7 @@
 
     <!-- Main navigation container -->
     <div class="relative">
-        <nav class=" fixed  top-0 z-40 flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+        <nav id="changeBackground" class="  fixed  bg-[#FBFBFB] top-0 z-40 flex w-full flex-nowrap items-center justify-between  py-2 text-neutral-500 shadow hover:text-neutral-700 focus:text-neutral-700  lg:flex-wrap lg:justify-start lg:py-4"
             data-te-navbar-ref>
             <div
                 class=" sm:px-[0px] md:px-[0px] lg:px-[5%] xl:px-[12%] flex w-full flex-wrap items-center justify-between px-3">
@@ -115,7 +115,7 @@
 
 
     <!--  container CONTACT US-->
-    <div class="bg-[#d2ab67] w-[100%] h-[100%]">
+    <div class="bg-[#d2ab67]  w-[100%] h-[100%]">
         <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
 
             <!-- Left column container CONTACT US-->
@@ -172,7 +172,7 @@
             <!-- Right column container with background-->
             <div class="shrink-1  max-lg:hidden grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
                 <img src="https://static.wixstatic.com/media/4a8a8b_afe9ab6a7a2141e0b9457a7822955f13~mv2.jpg/v1/fill/w_675,h_768,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4a8a8b_afe9ab6a7a2141e0b9457a7822955f13~mv2.jpg"
-                    class="w-full h-full  " alt="contact" />
+                    class="w-full h-full opacity-50 " alt="contact" />
             </div>
         </div>
 
@@ -181,7 +181,7 @@
 
         <div class="flex justify-center">
             <!-- form send -->
-            <div class="p-6 max-sm:w-[100%]  w-[50%] ">
+            <div class="p-6 max-sm:w-[100%]  max-md:w-[70%] w-[50%] ">
                 <form>
                     <div class="grid gap-4 grid-cols-1 grid-rows-1 md:grid-cols-2">
                         <!--First name input-->
@@ -208,7 +208,7 @@
 
                     <!--Message textarea-->
                     <div class="relative mb-6">
-                        <label class="text-black text-sm">
+                        <label class="text-black text-sm ">
                             Message
                         </label>
                         <textarea required
@@ -217,7 +217,7 @@
                     </div>
 
                     <!-- Send button-->
-                    <div class="flex justify-center">
+                    <div class="flex mb-[100px] justify-center">
                         <button type="submit"
                             class="bg-white hover:bg-[#d2ab67] border-[1px] border-solid border-[#000] hover:border-[#FFF] hover:text-white text-black shadow-md normal-case  inline-block w-28 rounded  px-6 pb-2 pt-2.5 text-sm  hover:shadow-lg">
                             Send
@@ -225,12 +225,12 @@
                     </div>
                 </form>
             </div>
-        </div><br />
-    </div><br />
+        </div>
+    </div>
 
 
     <!-- Footer container -->
-    <footer class="flex flex-col items-center text-center lg:text-left">
+    <footer class=" mt-[20px] flex flex-col items-center text-center lg:text-left">
 
         <!--footer menu-->
         <div class="flex flex-col items-center">

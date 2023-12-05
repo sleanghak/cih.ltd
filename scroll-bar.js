@@ -14,6 +14,19 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+// function change background
+window.onscroll = function () {
+
+    var myBackground = document.getElementById("changeBackground");
+
+    if (document.documentElement.scrollTop > 0) {
+        myBackground.style.backgroundColor = "white";
+    } else {
+        myBackground.style.backgroundColor = "black";
+    }
+}
+
+
 // function​ for swiper (slider)
 
 const swiperEl = document.querySelector('swiper-container');
