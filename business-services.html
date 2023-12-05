@@ -36,7 +36,8 @@
     <div class="relative">
         <nav class=" fixed  top-0 z-40 flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
             data-te-navbar-ref>
-            <div class="sm:px-[0px] md:px-[0px] lg:px-[5%] xl:px-[12%] flex w-full flex-wrap items-center justify-between px-3">
+            <div
+                class="sm:px-[0px] md:px-[0px] lg:px-[5%] xl:px-[12%] flex w-full flex-wrap items-center justify-between px-3">
                 <!-- components image logo cih.ltd-->
                 <div>
                     <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
@@ -117,41 +118,46 @@
         <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
 
             <!-- Left column container CBUSINESS SERVICES-->
-            <div class=" md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 pl-[5%] max-lg:mt-[20px]">
-                <h1
-                    class="text-[50px] text-[#d2ab67] max-lg:text-center max-sm:text-[28px]  max-sm:mt-[15%] max-md:mt-[10%] max-lg:mt-[15%] max-xl:mt-[20%] max-2xl:mt-[20%]">
-                    BUSINESS SERVICES
-                </h1>
-                <br />
-                <div>
-                    <p class="text-[#FFF] leading-loose ">
-                        Based on strong local resources, the group provides connections from major fields such as
-                        governments, enterprises, factories, intermediaries, and industry experts to solve various
-                        problems that enterprises may encounter when investing in local areas, so that enterprises can
-                        set up and conduct business without any worries.
-                    </p>
+            <div class="grid  gap-8 grid-cols-1 grid-rows-1 md:grid-cols-2">
+                <!-- lg:mt-[30px] lg:ml-[30px] lg:mb-[50px]  md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 pl-[5%] max-lg:mt-[20px]  -->
+                <div class=" lg:mt-[30px] lg:ml-[50px] lg:mb-[50px]  md:mb-0   pl-[5%] max-lg:mt-[20px]">
+                    <h1
+                        class="text-title text-[50px] text-[#d2ab67] max-lg:text-center max-sm:text-[28px]  max-sm:mt-[15%] max-md:mt-[10%] max-lg:mt-[15%] max-xl:mt-[20%] max-2xl:mt-[20%]">
+                        BUSINESS SERVICES
+                    </h1>
+                    <br />
+                    <div>
+                        <p class="text-[#FFF] leading-loose text-justify lg:mr-[10%]">
+                            Based on strong local resources, the group provides connections from major fields such as
+                            governments, enterprises, factories, intermediaries, and industry experts to solve various
+                            problems that enterprises may encounter when investing in local areas, so that enterprises
+                            can
+                            set up and conduct business without any worries.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right column container with background-->
+                <!-- lg:mt-[80px] max-lg:hidden grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12 -->
+                <div class=" ">
+                    <img src="https://static.wixstatic.com/media/4a8a8b_22b0f9cfa76b41b3a76218e73e1bade6~mv2.jpg/v1/fill/w_675,h_369,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4a8a8b_22b0f9cfa76b41b3a76218e73e1bade6~mv2.jpg"
+                        class="w-full h-full  " alt="contact" />
                 </div>
             </div>
-
-            <!-- Right column container with background-->
-            <div class="shrink-1  max-lg:hidden grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
-                <img src="https://static.wixstatic.com/media/4a8a8b_22b0f9cfa76b41b3a76218e73e1bade6~mv2.jpg/v1/fill/w_675,h_369,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4a8a8b_22b0f9cfa76b41b3a76218e73e1bade6~mv2.jpg"
-                    class="w-full h-full  " alt="contact" />
-            </div>
         </div>
-        <!-- White line -->
-        <div class="flex bg-white h-[3px] w-full max-sm:hidden max-md:hidden max-lg:hidden">
+        <!-- White line max-sm:hidden max-md:hidden max-lg:hidden-->
+        <div class="flex bg-white h-[3px] w-full ">
 
         </div>
 
         <!-- Left column container CBUSINESS SERVICES-->
-        <div class=" max-sm:mt-[20px]">
-            <h1 class="text-[50px] text-[#d2ab67] text-center max-sm:text-[30px]  ">
-                SERVICES UNITS
+        <div class=" max-sm:mt-[20px] ">
+            <h1 class="text-[50px] text-[#d2ab67] text-center max-sm:text-[30px]  mt-[20px]">
+                SERVICES <br /> UNITS
             </h1>
-            <br />
+           
 
-            <div class=" flex justify-center">
+            <div class=" flex justify-center mt-[20px] pb-[30px]">
                 <div class="grid gap-[50px] grid-cols-1 grid-rows-1 sm:grid-cols-5 md:grid-cols-5  lg:grid-cols-5">
 
 
@@ -206,16 +212,16 @@
                     </a>
 
                 </div>
-            </div><br />
+            </div>
         </div>
-    </div><br />
+    </div>
 
     <!-- card  container-->
-    <div class="container-layout flex justify-evenly ">
-        <div class="grid  gap-8 grid-cols-1 grid-rows-1 md:grid-cols-1">
+    <div class="container-layout mt-[20px]">
+        <div class="grid  gap-4 grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-1 xl:lg:grid-cols-2">
             <!-- Market Investigation and Commercial Feasibility Analysis -->
             <div id="market" class="flex max-sm:hidden">
-                <div  class="flip-card flex  rounded-lg bg-white justify-start ">
+                <div class="flip-card flex  rounded-lg bg-white justify-start ">
                     <img class="h-full w-full object-cover  rounded-l-lg"
                         src="https://static.wixstatic.com/media/4a8a8b_74a74cf6c4754b9a800b5ccd79a5937a~mv2.jpg/v1/fill/w_265,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Market%20investigation%20and%20commercial%20feasibility%20analysis.jpg"
                         alt="img" />
@@ -279,7 +285,7 @@
 
             <!-- Financial Due Diligence -->
             <div id="financial" class="flex max-sm:hidden">
-                <div  class="flip-card flex  rounded-lg bg-white justify-start ">
+                <div class="flip-card flex  rounded-lg bg-white justify-start ">
                     <img class="h-full w-full object-cover  rounded-l-lg"
                         src="https://static.wixstatic.com/media/4a8a8b_5ebf7679d6194ef3aa71d0f724a567fe~mv2.jpg/v1/fill/w_265,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Financial%20due%20diligence%20Photo.jpg"
                         alt="img" />
@@ -338,7 +344,7 @@
 
             <!-- Bank Account Opening and Wealth Management -->
             <div id="bank" class="flex max-sm:hidden">
-                <div  class="flip-card flex  rounded-lg bg-white justify-start ">
+                <div class="flip-card flex  rounded-lg bg-white justify-start ">
                     <img class="h-full w-full object-cover  rounded-l-lg"
                         src="https://static.wixstatic.com/media/4a8a8b_5723da1546234b20ac4e3c3394703257~mv2.jpg/v1/fill/w_265,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Bank%20account%20opening%20Photo.jpg"
                         alt="img" />
@@ -405,7 +411,7 @@
 
             <!--Legal Consultation -->
             <div id="legal" class="flex max-sm:hidden">
-                <div  class="flip-card flex  rounded-lg bg-white justify-start ">
+                <div class="flip-card flex  rounded-lg bg-white justify-start ">
                     <img class="h-full w-full object-cover  rounded-l-lg"
                         src="https://static.wixstatic.com/media/4a8a8b_ca436a5c1a9949cc9c25b6f9f3ce1c14~mv2.jpg/v1/crop/x_1065,y_0,w_4151,h_4480/fill/w_265,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/legal%20consultant%20Photo.jpg"
                         alt="img" />
@@ -473,21 +479,21 @@
                 </div>
             </div>
 
-        </div><br />
+        </div>
 
-    </div><br />
+    </div>
 
     <!-- COMPANY SERVICES -->
-    <div id="company" class="bg-[#f2f2f2] h-full h-full"><br />
-        <div class="flex justify-center">
-            <img class="h-[60px] w-[80px]"
+    <div id="company" class="bg-[#f2f2f2] h-full h-full mt-[20px] mb-[40px] pb-[40px]">
+        <div class="flex justify-center ">
+            <img class="h-[60px] w-[80px] mt-[20px]"
                 src="https://static.wixstatic.com/media/4a8a8b_0b05e5b0d1cc4b02b0fb6280bae16d82~mv2.png/v1/fill/w_77,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01%20Business%20Registration-01.png"
                 alt="company" />
-        </div><br />
-        <h1 class="text-black text-[30px] text-center">COMPANY SERVICES</h1><br />
+        </div>
+        <h1 class="text-black text-[30px] text-center mt-[20px]">COMPANY SERVICES</h1>
 
-        <div class="container-layout flex justify-evenly ">
-            <div class="grid  gap-8 grid-cols-1 grid-rows-1 md:grid-cols-1">
+        <div class="container-layout mt-[20px]">
+            <div class="grid  gap-4 grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-1 xl:lg:grid-cols-2">
                 <!-- Business Registration -->
                 <div class="flex max-sm:hidden">
                     <div class="flip-card flex  rounded-lg  justify-start ">
@@ -786,11 +792,11 @@
                     </div>
                 </div>
 
-            </div><br />
+            </div>
 
-        </div><br />
+        </div>
 
-    </div><br />
+    </div>
 
 
     <!-- Footer container -->

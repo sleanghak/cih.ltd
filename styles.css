@@ -49,6 +49,8 @@
     border-radius: 5px;
 }
 
+
+
 /* style hover on card business transparent in page business services*/
 .flip-card {
     background-color: transparent;
@@ -89,6 +91,8 @@
     /* color:#000000; */
     transform: rotateY(180deg);
 }
+
+
 
 /* style css for card slider */
 .flip-card-slider {
@@ -183,8 +187,45 @@ swiper-slide img {
     }
 }
 
+/* style text animation  business-services */
+
+.text-title {
+    position: relative;
+    animation-name: textAnimation;
+    animation-duration: 7s;
+}
+
+@keyframes textAnimation {
+    0% {
+        left: -20px;
+        opacity: 0.1;
+    }
+
+    25% {
+        left: 0px;
+    }
+}
+
+/* style text animation  home  */
+.title-home {
+    position: relative;
+    animation-name: homeAnimation;
+    animation-duration: 6s;
+}
+
+@keyframes homeAnimation {
+    0% {
+        left: -100px;
+    }
+
+    25% {
+        left: 0px;
+    }
+}
+
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
     .container-layout {
         margin-left: 2.5%;

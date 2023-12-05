@@ -15,17 +15,17 @@ function topFunction() {
 }
 
 // function change background color
-window.onscroll = function () {
+const navbarElement = document.getElementById('changeBackground');
 
-    var myBackground = document.getElementById("changeBackground");
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
 
-    if (document.documentElement.scrollTop > 0) {
-        myBackground.style.backgroundColor = "white";
+    if (scrollY > 100) {
+        navbarElement.style.backgroundColor = '#FFF';
     } else {
-        myBackground.style.backgroundColor = "black";
+        navbarElement.style.backgroundColor = '#000';
     }
-}
-
+});
 
 // function​ for swiper (slider)
 
