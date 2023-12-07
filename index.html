@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | CIH</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- style btn go to top  -->
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <!-- Link add icon logo in title bar -->
@@ -67,9 +68,9 @@
                     </button>
 
                     <!-- Collapsible navbar container -->
-                    <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                    <div class="!visible mt-2 hidden flex-grow basis-[100%]  items-center lg:mt-0 lg:!flex lg:basis-auto"
                         id="navbarSupportedContent7" data-te-collapse-item>
-                        <ul class=" list-style-none ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+                        <ul class="  list-style-none ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
                             data-te-navbar-nav-ref>
                             <!-- Home link -->
                             <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
@@ -122,20 +123,18 @@
         <div class="background-image  relative overflow-hidden bg-cover bg-no-repeat">
             <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
                 <div class="flex  items-center ">
-                    <div class="px-6 text-[#d2ab67] title-home max-sm:mt-[180px] sm:mt-[170px] md:mt-[180px] md:ml-[50px] lg:mt-[190px] lg:ml-[100px] xl:ml-[130px] 2xl:ml-[160px]">
-                      
-                        <h1
-                            class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] ">
-                            Cambodian 
+                    <div
+                        class="px-6 text-[#d2ab67] title-home max-sm:mt-[180px] sm:mt-[170px] md:mt-[180px] md:ml-[50px] lg:mt-[190px] lg:ml-[100px] xl:ml-[130px] 2xl:ml-[160px]">
+
+                        <h1 class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] ">
+                            Cambodian
                         </h1>
-                       
-                        <h1
-                            class="font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
+
+                        <h1 class="font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
                             Investment
                         </h1>
-                       
-                        <h1
-                            class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
+
+                        <h1 class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
                             Holding
                         </h1>
                     </div>
@@ -149,7 +148,7 @@
                     <!-- ABOUT US Cambodian Investment Holding -->
                     <h1 class="text-[30px] p-[10px] text-white leading-loose">ABOUT US</h1>
                     <div class=" grid gap-8 p-[10px] grid-cols-1 grid-rows-1 md:grid-cols-2 ">
-                        <div >
+                        <div>
                             <p class="text-white leading-loose  text-justify">Cambodian Investment Holding Group was
                                 established
                                 in
@@ -230,7 +229,7 @@
 
                     </a>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -242,137 +241,135 @@
         </h1>
         <!-- carousel  OUR COMPANIES container-->
 
-        <swiper-container class="mySwiper" init="false">
-            <swiper-slide>
-
-                <div class="flip-card-slider">
+        <div class="slider">
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_8363c66e1a6640d6b2aee9ed15b3c213~mv2.png/v1/crop/x_0,y_473,w_4501,h_3555/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Cambodia%20Airways.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 Cambodian Airways
                             </p>
                         </div>
                     </div>
                 </div>
-
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_96ed0c0bacc1410ab04bff5f44629db6~mv2.png/v1/crop/x_0,y_669,w_4501,h_3163/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CCU%20Bank.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 CCU Bank
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_81875cbb0b3a44e8a4e98e134653bff9~mv2.png/v1/crop/x_0,y_663,w_4501,h_3176/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CB%20Insurance.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 CB Insurance
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_c8354a3f591b4b22bab979a9fcce0f84~mv2.png/v1/crop/x_0,y_669,w_4501,h_3163/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Less%20solution.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 Less Solutions
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_ea09f6802a174ad9b67954cb950b32eb~mv2.png/v1/crop/x_0,y_663,w_4500,h_3175/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CE%20Express.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 CE Express
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/e4a59a_530e9d110c3445469b9d576b54b55de9~mv2.png/v1/crop/x_0,y_663,w_4501,h_3176/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CE%20Logistics.png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 CE Logistics
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
                             <img src="https://static.wixstatic.com/media/ef2cff_05cffca4b6ad4d62a545ee5e6dc0432a~mv2.png/v1/crop/x_0,y_4,w_2250,h_1581/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CIH%20Our%20business%20(for%20web).png"
-                                alt="img" class="w-[250px] h-[200px]">
+                                alt="img" class="w-[150px] h-[100px]">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm"> 
                                 Jihaiwai
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flip-card-slider">
+            </div>
+            <div class="slide">
+                <div class="flip-card-slider h-[100px]">
                     <div class="flip-card-inner-slider">
                         <div class="flip-card-front-slider">
-                            <img class="w-[250px] h-[200px]"
+                            <img class="w-[150px] h-[100px]"
                                 src="https://static.wixstatic.com/media/4a8a8b_e95f786d27c2472d9b261100dae6c2fa~mv2.png/v1/crop/x_0,y_0,w_231,h_162/fill/w_185,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RICHENG%202.png"
                                 alt="img">
                         </div>
                         <div class="flip-card-back-slider">
-                            <p>
+                            <p class="text-sm">
                                 RICHENG
                             </p>
                         </div>
                     </div>
                 </div>
-            </swiper-slide>
-        </swiper-container>
-        <!-- import  javacript from swiper-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            </div>
+        </div>
+        <!-- import CND   jquery  for slider -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        
         <!-- link go to  business-services-->
-        <div class="flex justify-center mt-[40px]">
+        <div class="flex justify-center ">
             <a href="./our-companies.html"
                 class="flex items-center rounded-full border-[2px] border-solid border-[#d2ab67] bg-[#FFF] px-6 pb-[4px] pt-[4px] text-md font-medium  leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-[#d2ab67] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">
                 <span class="mr-3 ">

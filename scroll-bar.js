@@ -41,30 +41,46 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// function​ for swiper (slider)
-
-const swiperEl = document.querySelector('swiper-container');
-
-const params = {
-    centeredSlides: false,
-    slidesPerGroupSkip: 1,
-    grabCursor: true,
-    keyboard: {
-        enabled: true,
-    },
-    breakpoints: {
-        769: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-        },
-    },
-    scrollbar: true,
-    navigation: true,
-    pagination: {
-        clickable: true,
-    },
-};
-
-Object.assign(swiperEl, params)
-
-swiperEl.initialize();
+// function​ for slider
+$(document).ready(function () {
+    $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+        {
+                breakpoint: 1200, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 992, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
