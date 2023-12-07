@@ -216,6 +216,7 @@ swiper-slide img {
 @keyframes homeAnimation {
     0% {
         left: -100px;
+        opacity: 0.1;
     }
 
     25% {
@@ -235,7 +236,7 @@ swiper-slide img {
     .background-image {
         background-position: 50%;
         background-image: url('./images/cih.ltd-header.png');
-        height: 2000px;
+        height: 1070px;
     }
 
 
@@ -251,7 +252,7 @@ swiper-slide img {
     .background-image {
         background-position: 50%;
         background-image: url('./images/cih.ltd-header.png');
-        height: 1700px;
+        height: 1070px;
     }
 
 }
@@ -267,7 +268,7 @@ swiper-slide img {
     .background-image {
         background-position: 50%;
         background-image: url('./images/cih.ltd-header.png');
-        height: 1500px;
+        height: 1000px;
     }
 
 }
@@ -282,7 +283,7 @@ swiper-slide img {
     .background-image {
         background-position: 50%;
         background-image: url('./images/cih.ltd-header.png');
-        height: 1400px;
+        height: 920px;
     }
 
 }
@@ -297,6 +298,6 @@ swiper-slide img {
     .background-image {
         background-position: 50%;
         background-image: url('./images/cih.ltd-header.png');
-        height: 1400px;
+        height: 1023px;
     }
 }

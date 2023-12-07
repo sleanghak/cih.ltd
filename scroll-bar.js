@@ -27,6 +27,20 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// function change background color
+const navbarChangeBackgroundColor = document.getElementById('navbarHome');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 50) {
+        navbarChangeBackgroundColor.style.backgroundColor = '#FFF';
+
+    } else {
+        navbarChangeBackgroundColor.style.backgroundColor = '';
+    }
+});
+
 // function​ for swiper (slider)
 
 const swiperEl = document.querySelector('swiper-container');

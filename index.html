@@ -32,125 +32,136 @@
 
 <body>
 
-    <!-- Main navigation container -->
-    <div class="relative">
-        <nav class="   fixed  top-0 z-40 flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
-            data-te-navbar-ref>
-            <div class="sm:px-[0px] md:px-[0px] lg:px-[5%] xl:px-[12%] flex w-full flex-wrap items-center justify-between px-3">
-                <!-- components image logo cih.ltd-->
-                <div>
-                    <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
-                        href="./index.html">
-                        <img class="mr-2" src="./images/cih.ltd.png" style="height: 50px" alt="cih.ltd"
-                            loading="lazy" />
-                    </a>
-                </div>
-
-                <!-- Hamburger button for mobile view -->
-                <button
-                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent7"
-                    aria-controls="navbarSupportedContent7" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- Hamburger icon -->
-                    <span class="[&>svg]:w-7">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-                            <path fill-rule="evenodd"
-                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                </button>
-
-                <!-- Collapsible navbar container -->
-                <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-                    id="navbarSupportedContent7" data-te-collapse-item>
-                    <ul class=" list-style-none ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row" data-te-navbar-nav-ref>
-                        <!-- Home link -->
-                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                            <a data-te-ripple-init data-te-ripple-color="light"
-                                class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
-                                aria-current="page" href="./index.html" data-te-nav-link-ref>
-                                Home
-                            </a>
-                        </li>
-                        <!--  Business Services link -->
-                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                            <a data-te-ripple-init data-te-ripple-color="light"
-                                class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
-                                aria-current="page" href="./business-services.html" data-te-nav-link-ref>
-                                Business Services
-                            </a>
-                        </li>
-                        <!--    Our Companies link -->
-                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                            <a data-te-ripple-init data-te-ripple-color="light"
-                                class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
-                                aria-current="page" href="./our-companies.html" data-te-nav-link-ref>
-                                Our Companies
-                            </a>
-                        </li>
-                        <!--    Careers link -->
-                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                            <a data-te-ripple-init data-te-ripple-color="light"
-                                class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
-                                aria-current="page" href="./careers.html" data-te-nav-link-ref>
-                                Careers
-                            </a>
-                        </li>
-                        <!-- Contact Us link -->
-                        <li class="my-4  lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                            <a data-te-ripple-init data-te-ripple-color="light"
-                                class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
-                                aria-current="page" href="./contact-us.html" data-te-nav-link-ref>
-                                Contact Us
-                            </a>
-                        </li>
-
-                       
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div><br /><br /><br />
-
     <!--header  container-->
     <header>
+        <!-- Main navigation container -->
+        <div class="relative">
+            <nav id="navbarHome" style="transition: background-color 0.3s ease-in-out;"
+                class="  fixed  top-0 z-40 flex w-full flex-nowrap items-center justify-between  py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+                data-te-navbar-ref>
+                <div
+                    class="sm:px-[0px] md:px-[0px] lg:px-[5%] xl:px-[12%] flex w-full flex-wrap items-center justify-between px-3">
+                    <!-- components image logo cih.ltd-->
+                    <div>
+                        <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+                            href="./index.html">
+                            <img class="mr-2" src="./images/cih.ltd.png" style="height: 50px" alt="cih.ltd"
+                                loading="lazy" />
+                        </a>
+                    </div>
+
+                    <!-- Hamburger button for mobile view -->
+                    <button
+                        class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent7"
+                        aria-controls="navbarSupportedContent7" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- Hamburger icon -->
+                        <span class="[&>svg]:w-7">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-7 w-7">
+                                <path fill-rule="evenodd"
+                                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <!-- Collapsible navbar container -->
+                    <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                        id="navbarSupportedContent7" data-te-collapse-item>
+                        <ul class=" list-style-none ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+                            data-te-navbar-nav-ref>
+                            <!-- Home link -->
+                            <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
+                                <a data-te-ripple-init data-te-ripple-color="light"
+                                    class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
+                                    aria-current="page" href="./index.html" data-te-nav-link-ref>
+                                    Home
+                                </a>
+                            </li>
+                            <!--  Business Services link -->
+                            <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
+                                <a data-te-ripple-init data-te-ripple-color="light"
+                                    class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
+                                    aria-current="page" href="./business-services.html" data-te-nav-link-ref>
+                                    Business Services
+                                </a>
+                            </li>
+                            <!--    Our Companies link -->
+                            <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
+                                <a data-te-ripple-init data-te-ripple-color="light"
+                                    class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
+                                    aria-current="page" href="./our-companies.html" data-te-nav-link-ref>
+                                    Our Companies
+                                </a>
+                            </li>
+                            <!--    Careers link -->
+                            <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
+                                <a data-te-ripple-init data-te-ripple-color="light"
+                                    class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
+                                    aria-current="page" href="./careers.html" data-te-nav-link-ref>
+                                    Careers
+                                </a>
+                            </li>
+                            <!-- Contact Us link -->
+                            <li class="my-4  lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
+                                <a data-te-ripple-init data-te-ripple-color="light"
+                                    class="text-[#d2ab67] normal-case mr-1 inline-block rounded px-6 pb-2 pt-2.5 text-sm font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100  motion-reduce:transition-none"
+                                    aria-current="page" href="./contact-us.html" data-te-nav-link-ref>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
         <!-- Hero section with background image, heading, subheading -->
-        <div class="background-image relative overflow-hidden bg-cover bg-no-repeat">
+        <div class="background-image  relative overflow-hidden bg-cover bg-no-repeat">
             <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
                 <div class="flex  items-center ">
-                    <div class="px-6 title-home  md:px-12">
+                    <div class="px-6 text-[#d2ab67] title-home max-sm:mt-[180px] sm:mt-[170px] md:mt-[180px] md:ml-[50px] lg:mt-[190px] lg:ml-[100px] xl:ml-[130px] 2xl:ml-[160px]">
+                      
                         <h1
-                            class=" max-sm:mt-[40px] max-sm:ml-[40px] max-md:mt-[60px] max-md:ml-[60px] md:mt-[100px] md:ml-[100px] max-sm:text-[50px] max-md:text-[65px] text-[#d2ab67] text-[80px] font-bold">
-                            Cambodian
+                            class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] ">
+                            Cambodian 
                         </h1>
+                       
                         <h1
-                            class="max-sm:ml-[40px]  max-md:ml-[60px]  md:ml-[100px] max-sm:text-[50px] max-md:text-[65px] text-[#d2ab67] text-[80px] font-bold">
+                            class="font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
                             Investment
                         </h1>
+                       
                         <h1
-                            class="max-sm:ml-[40px]  max-md:ml-[60px]  md:ml-[100px] max-sm:text-[50px] max-md:text-[65px] text-[#d2ab67] text-[80px] font-bold">
+                            class=" font-bold max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px]">
                             Holding
                         </h1>
                     </div>
                 </div>
             </div>
 
-            <div class="absolute bottom-0 left-0 right-0 max-sm:top-[450px] max-md:top-[570px] max-lg:top-[570px] lg:top-[570px] h-full w-full overflow-hidden bg-fixed"
-                style="background-color: rgba(0, 0, 0, 0.75) ;">
-                <div class="container-layout">
+
+            <div
+                class="absolute  bottom-0 left-0 right-0 max-sm:top-[500px] max-md:top-[570px] max-lg:top-[570px] lg:top-[700px] lg:px-[8%]  h-full w-full overflow-hidden bg-fixed">
+                <div class="container-layout px-5 " style="background-color: rgba(0, 0, 0, 0.75) ;">
                     <!-- ABOUT US Cambodian Investment Holding -->
                     <h1 class="text-[30px] p-[10px] text-white leading-loose">ABOUT US</h1>
-                    <div class="grid gap-8 p-[10px] grid-cols-1 grid-rows-1 md:grid-cols-2">
-                        <div>
-                            <p class="text-white leading-loose">Cambodian Investment Holding Group was established in
+                    <div class=" grid gap-8 p-[10px] grid-cols-1 grid-rows-1 md:grid-cols-2 ">
+                        <div >
+                            <p class="text-white leading-loose  text-justify">Cambodian Investment Holding Group was
+                                established
+                                in
                                 2018. We are a large-scale regional investment group across countries and platforms.
                                 Investing rapidly in various industries involving the national economic growth and
                                 people's livelihoods, the group has built an industrial ecosystem that included
                                 aviation, logistics, banking, insurance, and others.</p>
                         </div>
                         <div>
-                            <p class="text-white leading-loose">Currently, Southeast Asia is becoming one of the most
+                            <p class="text-white leading-loose  text-justify">Currently, Southeast Asia is becoming one
+                                of the
+                                most
                                 dynamic region for global economic growth. Taking advantage of rapid regional
                                 development, the group actively integrates between resources and markets, such as
                                 Cambodia, Thailand, Vietnam, and Singapore; the group is also committed to providing
@@ -159,72 +170,76 @@
                         </div>
                     </div>
 
-                    <div class="bg-black md:mt-[70px] lg:mt-[100px]">
-                        <!-- BUSINESS SERVICES -->
-                        <div class="grid p-[20px] gap-8 grid-cols-1 grid-rows-1 md:grid-cols-2">
-                            <div>
-                                <h1 class="text-[30px] text-white leading-loose">BUSINESS SERVICES</h1>
-                                <p class="text-white leading-loose">
-                                    Based on strong local resources, the group provides connections from major fields
-                                    such
-                                    as governments, enterprises, factories, intermediaries, and industry experts to
-                                    solve
-                                    various problems that enterprises may encounter when investing in local areas, so
-                                    that
-                                    enterprises can set up and conduct business without any worries.
-                                </p>
-                            </div>
-
-                            <!-- SERVICES UNITS -->
-                            <div>
-                                <h1 class="text-[30px] text-white leading-loose">SERVICES UNITS</h1>
-                                <ul class="list-disc">
-                                    <li class="text-white leading-loose">
-                                        Market investigation and commercial feasibility analysis
-                                    </li>
-                                    <li class="text-white leading-loose">
-                                        Financial due diligence
-                                    </li>
-                                    <li class="text-white leading-loose">
-                                        Bank account opening and wealth management
-                                    </li>
-                                    <li class="text-white leading-loose">
-                                        Legal consultation
-                                    </li>
-                                    <li class="text-white leading-loose">
-                                        Company Services
-                                    </li>
-                                </ul><br />
-
-                                <!-- link go to  business-services-->
-                                <div class="flex justify-center">
-                                    <a href="./business-services.html"
-                                        class="flex items-center rounded-full bg-[#d2ab67] px-6 pb-[4px] pt-[4px] text-md font-medium  leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-[#d2ab67] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] hover:border-[1px] border-solid border-[#FFF]">
-                                        <span class="mr-3 ">
-                                            Click Cere
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="h-8 w-8">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-
-                                    </a>
-                                </div>
-                                <br /><br /><br />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+
         </div>
-    </header><br />
+    </header>
+
+    <div class="bg-black lg:px-[13%] pt-[50px]">
+        <!-- BUSINESS SERVICES -->
+        <div class="grid p-[20px] gap-8 grid-cols-1 grid-rows-1 md:grid-cols-2">
+            <div>
+                <h1 class="text-[30px] text-white leading-loose">BUSINESS SERVICES</h1>
+                <p class="text-white leading-loose text-justify">
+                    Based on strong local resources, the group provides connections from major
+                    fields
+                    such
+                    as governments, enterprises, factories, intermediaries, and industry experts to
+                    solve
+                    various problems that enterprises may encounter when investing in local areas,
+                    so
+                    that
+                    enterprises can set up and conduct business without any worries.
+                </p>
+            </div>
+
+            <!-- SERVICES UNITS -->
+            <div>
+                <h1 class="text-[30px] text-white leading-loose">SERVICES UNITS</h1>
+                <ul class="list-disc text-justify ml-[20px]">
+                    <li class="text-white leading-loose">
+                        Market investigation and commercial feasibility analysis
+                    </li>
+                    <li class="text-white leading-loose">
+                        Financial due diligence
+                    </li>
+                    <li class="text-white leading-loose">
+                        Bank account opening and wealth management
+                    </li>
+                    <li class="text-white leading-loose">
+                        Legal consultation
+                    </li>
+                    <li class="text-white leading-loose">
+                        Company Services
+                    </li>
+                </ul>
+
+                <!-- link go to  business-services-->
+                <div class="flex justify-center mt-[20px] pb-[30px]">
+                    <a href="./business-services.html"
+                        class="flex items-center rounded-full bg-[#d2ab67] px-6 pb-[4px] pt-[4px] text-md font-medium  leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-[#d2ab67] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] hover:border-[1px] border-solid border-[#FFF]">
+                        <span class="mr-3 ">
+                            Click Cere
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-8 w-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                    </a>
+                </div>
+              
+            </div>
+        </div>
+    </div>
 
     <!-- OUR COMPANIES container-->
     <div class="container-layout">
-        <h1 class="text-center text-[40px] max-sm:text-[30px] text-[#d2ab67] font-bold">
+        <h1 class="text-center mt-[20px] text-[40px] max-sm:text-[30px] text-[#d2ab67] font-bold">
             OUR COMPANIES
-        </h1><br />
+        </h1>
         <!-- carousel  OUR COMPANIES container-->
 
         <swiper-container class="mySwiper" init="false">
@@ -355,9 +370,9 @@
         <!-- import  javacript from swiper-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-        <br /><br />
+        
         <!-- link go to  business-services-->
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-[40px]">
             <a href="./our-companies.html"
                 class="flex items-center rounded-full border-[2px] border-solid border-[#d2ab67] bg-[#FFF] px-6 pb-[4px] pt-[4px] text-md font-medium  leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-[#d2ab67] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">
                 <span class="mr-3 ">
@@ -370,11 +385,11 @@
                 </svg>
 
             </a>
-        </div><br /><br />
+        </div>
     </div>
 
     <!-- Footer container -->
-    <footer class="flex flex-col items-center text-center lg:text-left">
+    <footer class="flex mt-[40px] flex-col items-center text-center lg:text-left">
 
         <!--footer menu-->
         <div class="flex flex-col items-center">
